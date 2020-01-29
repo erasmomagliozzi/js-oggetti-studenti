@@ -61,6 +61,10 @@ $(document).ready(
     var newEta = parseInt(prompt('inserisci la tua età'));
     newStudente['eta'] = newEta;
     console.log(newStudente);
+    listaStudenti.push(newStudente);
+    for (var i = 0; i < listaStudenti.length; i++) {
+      console.log(listaStudenti[i].nome + ' ' + listaStudenti[i].cognome + ' ' + listaStudenti[i].eta);
+    };
 
 
     var source = $('#entry-template').html();

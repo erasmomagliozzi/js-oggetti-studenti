@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.js" integrity="sha256-N5vR06TQIR+YD8oS0yndB1pu/EITeijW52dwezEq7/g=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+
+      <input type="text" class="input" placeholder="inserisci messaggio">
+      <button type="button" class="invia">Invia</button>
+      <div class="mex_utente">
+       <h4></h4>
+     </div>
+     <div class="mex_computer">
+      <h4></h4>
+    </div>
+
+
+
+
+
+
+    <script id="entry-template" type="text/x-handlebars-template">
+       <div class="mex_utente">
+          <h4>Messaggio Utente:{{messaggio}}</h4>
+      </div>
+      <div class="mex_computer">
+         <h4>Messaggio Computer:{{messaggioPc}}</h4>
+     </div>
+    </script>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
