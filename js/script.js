@@ -63,7 +63,16 @@ $(document).ready(
     console.log(newStudente);
 
 
+    var source = $('#entry-template').html();
+    var template = Handlebars.compile(source);
 
+    var context = {
+      'nome': newNome,
+      'cognome': newCognome,
+      'eta' : newEta
+    };
+    var html = template(context);
+    $('.list').append(html);
 
 
 
